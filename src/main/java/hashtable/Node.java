@@ -1,6 +1,7 @@
 package hashtable;
 
 public class Node<K, V>  {
+	
 		  K key;
 		    V value;
 		    Node<K, V> next;
@@ -44,4 +45,3 @@ public class Node<K, V>  {
 		        return nodeString.toString();
 		    }
 	}
-

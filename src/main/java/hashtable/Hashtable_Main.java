@@ -1,29 +1,23 @@
 package hashtable;
 
 public class Hashtable_Main {
-
-		public static void main(String[] args) {
-			
-			Implementation_Linkedlist<String, Integer> hashImpl = new Implementation_Linkedlist();
-	        String message = "To be or not to be";
-
-	        
+	
+	    public static void main(String[] args) {
+	        Implementation_Linkedlist<String, Integer> hash = new Implementation_Linkedlist<String, Integer>();
+	        String message = "India is a great country where people speak different languages but the national language is Hindi. India is full of different castes, creeds, religion, and cultures";
 	        String[] messageArray = message.toLowerCase().split(" ");
 
 	        for(String word: messageArray) {
-	            
-	            Integer value =  hashImpl.get(word);
-	            
-	            if( value == null) {
+	           
+	            Integer value =  hash.get(word);
+	           
+	            if( value == null)
 	                value = 1;
-	            }
-	            else {
-	               
+	            else
+	                
 	                value = value + 1;
-	            hashImpl.add(word , value);
+	            hash.add(word , value);
 	        }
-	        System.out.println(hashImpl);
+	        System.out.println(hash);
 	    }
 	}
-	}
-
