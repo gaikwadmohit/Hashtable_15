@@ -38,10 +38,10 @@ public class Node<K, V>  {
 
 		    @Override
 		    public String toString() {
-		        StringBuilder nodeString = new StringBuilder();
-		        nodeString.append("Node{" + "K=").append(key).append(" V=").append(value).append("}");
+		        StringBuilder sb = new StringBuilder();
+		        sb.append("Node{" + "K=").append(key).append(" V=").append(value).append("}");
 		        if(next != null)
-		            nodeString.append("->").append(next);
-		        return nodeString.toString();
+		        	sb.append("->").append(next);
+		        return sb.toString();
 		    }
 	}
