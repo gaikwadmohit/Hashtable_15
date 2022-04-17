@@ -4,7 +4,11 @@ public class Hashtable_Main {
 	
 	    public static void main(String[] args) {
 	        Implementation_Linkedlist<String, Integer> hash = new Implementation_Linkedlist<String, Integer>();
-	        String message = "India is a great country where people speak different languages but the national language is Hindi. India is full of different castes, creeds, religion, and cultures";
+	        String message = "“Paranoids are not\r\n"
+	        		+ "paranoid because they are paranoid but\r\n"
+	        		+ "because they keep putting themselves\r\n"
+	        		+ "deliberately into paranoid avoidable\r\n"
+	        		+ "situations”";
 	        String[] messageArray = message.toLowerCase().split(" ");
 
 	        for(String word: messageArray) {
